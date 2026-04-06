@@ -1,0 +1,12 @@
+# Entorno virtual (muy pesado para subir)
+venv/
+
+# Archivo de variables de entorno (CONTIENE TUS LLAVES SECRETAS)
+.env
+
+# Base de datos local (contiene tus datos registrados)
+*.sqlite3
+
+# Carpetas temporales de Python
+__pycache__/
+*.pyc

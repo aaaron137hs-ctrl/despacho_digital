@@ -9,12 +9,13 @@ def lista_casos(request):
     return render(request, 'expedientes/lista.html', {'casos': todos_los_casos})
 
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import CasoForm 
+from .forms import CasoForm
+
 
 def borrar_caso(request, id):
     caso = get_object_or_404(Caso, id=id)
     caso.delete()
-    return redirect('lista') 
+    return redirect('lista') # Nos regresa a la página principal
 
 
 def editar_caso(request, id):

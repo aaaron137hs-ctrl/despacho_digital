@@ -16,8 +16,8 @@ from dotenv import load_dotenv
 
 load_dotenv() 
 
-SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = os.getenv('DEBUG') == 'True'
+SECRET_KEY = 'django-insecure-esto-es-para-la-escuela'
+DEBUG = True
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
